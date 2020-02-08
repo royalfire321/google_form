@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form1</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">註冊表單</h1>
+        <iframe name="returnWin" style="display: none;" onload="this.onload=function(){window.location='finish.html'}"></iframe>
+        
+        <form target="returnWin" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScokTx8C66VGfQBfnJibQjQUCETQYJb0xin8yekOUvrT5guFQ/formResponse" method="post" id="myForm" class="mb-20" enctype="multipart/form-data">
+        
+          <div class="row">         
+            <!--帳號-->              
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>帳號<span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="entry.1446599406" id="uname" value="" required>
+              </div>
+            </div>         
+            <!--密碼-->              
+            <div class="col-sm-4">
+              <div class="form-group">
+                <label>密碼<span class="text-danger">*</span class="text-danger"></label>
+                <input type="password" class="form-control" name="entry.1104781956" id="pass" value="" required>
+              </div>
+            </div>         
+          <div class="text-center pb-20">
+            <input type="hidden" name="op" value="reg">
+            <button type="submit" class="btn btn-primary">送出</button>
+          </div>
+      
+        </form>
+      
+      </div>
+</body>
+</html>
